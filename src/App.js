@@ -11,15 +11,17 @@ function App() {
        <li><Link to="/chat">Chat</Link></li>
        <li><Link to="/about">About</Link></li>
      </ul>
-     <Route path="/contact">
-        <p>Contact</p>
-      </Route>
-      <Route path="/chat">
-        <p>Chat</p>
-      </Route>
-      <Route path="/about">
-        <p>About</p>
-      </Route>
+     <Switch>
+      <Route path="/contact">
+          <p>Contact</p>
+        </Route>
+        <Route path="/chat">
+          <p>Chat</p>
+        </Route>
+        <Route path="/about">
+          <p>About</p>
+        </Route>
+      </Switch>
     </div>
   );
 }
